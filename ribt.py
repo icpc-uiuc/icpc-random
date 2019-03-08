@@ -1,3 +1,4 @@
+# Ramdom Is The Best
 import random
 random.seed(2333)
 
@@ -23,5 +24,12 @@ def generate_random_tree(number_of_vertices: int):
 	return edges
 
 
+def generate_non_decreasing_sequence(low: int, high: int, n: int):
+	seq = generate_int_with_range(low, high, n)
+	seq = sorted(seq)
+	return seq
+
+
 # print(generate_int_with_range(0, 10, 100))
-print(generate_random_tree(6))
+# print(generate_random_tree(6))
+print(generate_non_decreasing_sequence(5, 20, 40))
